@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #5b4a59; /* Cor de fundo semelhante à da imagem */
+    color: #ffffff;
+}
+
+.game-container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.letter-box {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3c2f41;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3c2f41;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.present {
+    background-color: orange;
+    color: white;
+}
+
+.absent {
+    background-color: gray;
+    color: white;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.key {
+    width: 100%;
+    height: 50px;
+    background-color: #3c2f41;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.key.enter {
+    grid-column: span 2;
+}
+
+.key.backspace {
+    grid-column: span 2;
+}
+
+.key:hover {
+    background-color: #2a2130;
+}
